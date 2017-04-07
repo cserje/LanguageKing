@@ -14,10 +14,13 @@ namespace LanguageKing
     {
         private int selectedFirst=-1;
         private int selectedSecond=-1;
-        public ChooseLanguagePage()
+        
+        public ChooseLanguagePage(String s)
         {
+           
             InitializeComponent();
         }
+
         void OnFirstLanguageChanged(object sender, EventArgs e)
         {
           
@@ -32,7 +35,7 @@ namespace LanguageKing
 
         async void OnSelectLanguagesAsync(object sender, EventArgs e)
         {
-            if ((selectedFirst == -1 || selectedSecond == -1) || selectedFirst == selectedFirst)
+            if ((selectedFirst == -1 || selectedSecond == -1) || selectedFirst == selectedSecond)
             {
                 await DisplayAlert("Wrong decision", "Choose two different languages!", "Cancel");
             }

@@ -9,11 +9,14 @@ namespace LanguageKing
 {
     public partial class App : Application
     {
+       
         public App()
         {
+           
             InitializeComponent();
-            MainPage = new NavigationPage(new LanguageKing.ChooseLanguagePage());
+            MainPage = new NavigationPage(new LanguageKing.ChooseLanguagePage("Hello"));
         }
+    
 
         protected override void OnStart()
         {

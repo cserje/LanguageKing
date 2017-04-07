@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LanguageKing.LearnWords">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="10, 30, 10, 10"
+                    Android="10, 10, 10, 10"
+                    WinPhone="10, 10, 10, 10" />
+    </ContentPage.Padding>
+    <StackLayout Orientation="Vertical" Spacing="20">
+    <Entry Placeholder="Question" HorizontalOptions="FillAndExpand" IsEnabled="False"></Entry>
+    <Entry Placeholder="Response" IsEnabled="False"></Entry>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <Button x:Name="backButton" Text="Back" HorizontalOptions="FillAndExpand" ></Button>
+            <Button x:Name="nextButton" Text="Next" Clicked="nextButtonClicked" HorizontalOptions="FillAndExpand"></Button>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

@@ -14,5 +14,7 @@ c:\users\cserje\documents\visual studio 2017\Projects\LanguageKing\LanguageKing\
 c:\users\cserje\documents\visual studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\obj\Debug\LanguageKing.dll
 c:\users\cserje\documents\visual studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\obj\Debug\LanguageKing.pdb
 c:\users\cserje\documents\visual studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\obj\Debug\LanguageKing.MainMenuPage.xaml.g.cs
-c:\users\cserje\documents\visual studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\obj\Debug\LanguageKing.dll.mdb
-c:\users\cserje\documents\visual studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\bin\Debug\LanguageKing.dll.mdb
+C:\Users\Cserje\Documents\Visual Studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\obj\Debug\LanguageKing.LearnWords.xaml.g.cs
+C:\Users\Cserje\Documents\Visual Studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\obj\Debug\LanguageKing.PracticeWords.xaml.g.cs
+C:\Users\Cserje\Documents\Visual Studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\obj\Debug\LanguageKing.dll.mdb
+C:\Users\Cserje\Documents\Visual Studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\bin\Debug\LanguageKing.dll.mdb

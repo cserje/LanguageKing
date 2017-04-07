@@ -2,4 +2,20 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LanguageKing.MainMenuPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="10, 30, 10, 10"
+                    Android="10, 10, 10, 10"
+                    WinPhone="10, 10, 10, 10" />
+    </ContentPage.Padding>
+
+    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Spacing="20">
+        <Button x:Name="learnButton" Text="Learn words" Clicked="learnButton_Clicked" HorizontalOptions="FillAndExpand">
+        </Button>
+        <Button x:Name="practiceButton" Text="Practice" Clicked="practiceButton_clicked" HorizontalOptions="FillAndExpand">
+        </Button>
+
+        <Button x:Name="quitButton" Text="Quit" Clicked="CloseApplication" IsEnabled="False" HorizontalOptions="FillAndExpand">
+        </Button>
+        </StackLayout>
 </ContentPage>

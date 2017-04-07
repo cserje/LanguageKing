@@ -17,8 +17,20 @@ namespace LanguageKing {
     public partial class MainMenuPage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button learnButton;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button practiceButton;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button quitButton;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(MainMenuPage));
+            learnButton = this.FindByName<global::Xamarin.Forms.Button>("learnButton");
+            practiceButton = this.FindByName<global::Xamarin.Forms.Button>("practiceButton");
+            quitButton = this.FindByName<global::Xamarin.Forms.Button>("quitButton");
         }
     }
 }

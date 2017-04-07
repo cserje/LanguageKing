@@ -17,9 +17,24 @@ namespace LanguageKing
 
         public MainMenuPage(int first, int second)
         {
-            this.firstLanguage = first;
+           firstLanguage = first;
             this.secondLanguage = second;
             InitializeComponent();
+        }
+
+        private async Task learnButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new LearnWords(firstLanguage,secondLanguage));
+        }
+        
+             private async Task practiceButton_clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PracticeWords(firstLanguage, secondLanguage));
+        }
+      
+                private async Task CloseApplication(object sender, EventArgs e)
+        {
+            
         }
     }
 }

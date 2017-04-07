@@ -9,7 +9,7 @@ namespace LanguageKing
     class Word
     {
         //E, F, G, H, I
-        private List<String> element = new List<String>();
+        private List<string> element = new List<string>();
 
 
 
@@ -30,10 +30,11 @@ namespace LanguageKing
         {
             return element;
         }
-        public void setWord(int i, String s)
+        public void setWord(int i, string s)
         {
             element[i] = s;
         }
+        
 
     }
 }
