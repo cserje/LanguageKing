@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LanguageKing.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace LanguageKing
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ChooseLanguagePage : ContentPage
     {
+        
         private int selectedFirst=-1;
         private int selectedSecond=-1;
         
@@ -19,12 +21,17 @@ namespace LanguageKing
         {
            
             InitializeComponent();
+    
+            BindingContext = new ChooseLanguagePageViewModel();
+          
         }
 
         void OnFirstLanguageChanged(object sender, EventArgs e)
         {
           
             selectedFirst = firstLanguagePicker.SelectedIndex;
+            
+            
             
         }
         void OnSecondLanguageChanged(object sender, EventArgs e)
@@ -38,6 +45,7 @@ namespace LanguageKing
             if ((selectedFirst == -1 || selectedSecond == -1) || selectedFirst == selectedSecond)
             {
                 await DisplayAlert("Wrong decision", "Choose two different languages!", "Cancel");
+               
             }
             else
             {

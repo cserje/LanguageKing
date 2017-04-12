@@ -31,10 +31,10 @@ namespace LanguageKing
         {
             await Navigation.PushAsync(new PracticeWords(firstLanguage, secondLanguage));
         }
-      
-                private async Task CloseApplication(object sender, EventArgs e)
+
+        private void CloseApplication(object sender, EventArgs e)
         {
-            
+
         }
     }
 }
