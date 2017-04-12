@@ -43,7 +43,7 @@ namespace LanguageKing
 
         public void listenButtonClicked(object sender, EventArgs e)
         {
-            CrossTextToSpeech.Current.Speak("Hello world!");
+            CrossTextToSpeech.Current.Speak("Hello world! I am very bad at reading stuff.");
         }
 
         private List<Word> InitWords()
