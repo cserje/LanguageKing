@@ -1,4 +1,3 @@
-c:\users\cserje\documents\visual studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\obj\Debug\LanguageKing.csprojResolveAssemblyReference.cache
 c:\users\cserje\documents\visual studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\obj\Debug\LanguageKing.App.xaml.g.cs
 c:\users\cserje\documents\visual studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\obj\Debug\LanguageKing.ChooseLanguagePage.xaml.g.cs
 c:\users\cserje\documents\visual studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\bin\Debug\LanguageKing.dll

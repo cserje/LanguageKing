@@ -26,7 +26,7 @@ namespace LanguageKing {
         private global::Xamarin.Forms.Picker secondLanguagePicker;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Button selectLanguagesButton;
+        private global::Xamarin.Forms.Button nextButton;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
@@ -34,7 +34,7 @@ namespace LanguageKing {
             welcomeText = this.FindByName<global::Xamarin.Forms.Label>("welcomeText");
             firstLanguagePicker = this.FindByName<global::Xamarin.Forms.Picker>("firstLanguagePicker");
             secondLanguagePicker = this.FindByName<global::Xamarin.Forms.Picker>("secondLanguagePicker");
-            selectLanguagesButton = this.FindByName<global::Xamarin.Forms.Button>("selectLanguagesButton");
+            nextButton = this.FindByName<global::Xamarin.Forms.Button>("nextButton");
         }
     }
 }

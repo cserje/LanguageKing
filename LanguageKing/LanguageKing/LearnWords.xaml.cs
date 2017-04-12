@@ -19,7 +19,6 @@ namespace LanguageKing
             InitializeComponent();
             firstLanguage = first;
             secondLanguage = second;
-           
             //Learn();
         }
 

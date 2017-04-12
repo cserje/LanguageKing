@@ -13,9 +13,11 @@ namespace LanguageKing
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ChooseLanguagePage : ContentPage
     {
+        enum languages{english=0,french=1,german=2,hungarian=3,italian=4}
         
         private int selectedFirst=-1;
         private int selectedSecond=-1;
+        public static int FirstLanguage=0;
         
         public ChooseLanguagePage(String s)
         {
@@ -30,7 +32,7 @@ namespace LanguageKing
         {
           
             selectedFirst = firstLanguagePicker.SelectedIndex;
-            
+            FirstLanguage = selectedFirst;
             
             
         }
@@ -44,9 +46,25 @@ namespace LanguageKing
         {
             if ((selectedFirst == -1 || selectedSecond == -1) || selectedFirst == selectedSecond)
             {
-                await DisplayAlert("Wrong decision", "Choose two different languages!", "Cancel");
-               
+                switch(selectedFirst)
+                {
+                    case (int) languages.english:
+                        await DisplayAlert("Warning", "Choose two different languages!", "Cancel");
+                        break;
+                    case (int) languages.french:
+                        await DisplayAlert("Avertissement", "Choisissez deux langues différentes!", "Annuler");
+                        break;
+                    case (int) languages.german:
+                        await DisplayAlert("Warnung", "Wähle zwei verschiedene Sprachen!", "Stornieren");
+                        break;
+                    case (int)languages.hungarian:
+                        await DisplayAlert("Figyelmeztetés", "Válassz két különböző nyelvet!", "Vissza");
+                        break;
+                    case (int)languages.italian:
+                        await DisplayAlert("Avvertimento", "Scegli due lingue diverse!", "Annulla");
+                        break;
             }
+        }
             else
             {
            

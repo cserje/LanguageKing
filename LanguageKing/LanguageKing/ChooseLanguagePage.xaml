@@ -45,7 +45,7 @@
                     </Picker.Items>
                 </Picker>
             </StackLayout>
-            <Button x:Name="selectLanguagesButton" Text="Select Languages" IsEnabled="True" Clicked="OnSelectLanguagesAsync"></Button>
+            <Button x:Name="nextButton" Text="{Binding NextText}" IsEnabled="True" Clicked="OnSelectLanguagesAsync"></Button>
         </StackLayout>
 
     </ContentPage.Content>
