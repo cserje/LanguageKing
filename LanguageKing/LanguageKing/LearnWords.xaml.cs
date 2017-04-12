@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using Plugin.TextToSpeech;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -38,6 +40,12 @@ namespace LanguageKing
             count++;
             
         }
+
+        public void listenButtonClicked(object sender, EventArgs e)
+        {
+            CrossTextToSpeech.Current.Speak("Hello world!");
+        }
+
         private List<Word> InitWords()
         {
             //sorrend: angol, francia, német, magyar, olasz

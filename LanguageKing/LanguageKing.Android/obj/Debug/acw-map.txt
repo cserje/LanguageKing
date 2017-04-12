@@ -2,6 +2,10 @@ LanguageKing.Droid.MainActivity, LanguageKing.Android;md54ab1008f7935bb04e064f6a
 LanguageKing.Droid.MainActivity, LanguageKing.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54ab1008f7935bb04e064f6abca8165c3.MainActivity
 LanguageKing.Droid.MainActivity;md54ab1008f7935bb04e064f6abca8165c3.MainActivity
 languageking.droid.MainActivity;md54ab1008f7935bb04e064f6abca8165c3.MainActivity
+Plugin.TextToSpeech.TextToSpeech, Plugin.TextToSpeech;md54e563667b320e8477294d1af4ca5a8db.TextToSpeech
+Plugin.TextToSpeech.TextToSpeech, Plugin.TextToSpeech, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null;md54e563667b320e8477294d1af4ca5a8db.TextToSpeech
+Plugin.TextToSpeech.TextToSpeech;md54e563667b320e8477294d1af4ca5a8db.TextToSpeech
+plugin.texttospeech.TextToSpeech;md54e563667b320e8477294d1af4ca5a8db.TextToSpeech
 Android.Support.Design.Widget.Snackbar/SnackbarActionClickImplementor, Xamarin.Android.Support.Design;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar+SnackbarActionClickImplementor, Xamarin.Android.Support.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar.SnackbarActionClickImplementor;android.support.design.widget.Snackbar_SnackbarActionClickImplementor

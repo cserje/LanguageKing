@@ -11,7 +11,7 @@
     <StackLayout Orientation="Vertical" Spacing="20">
     <Entry Placeholder="Question" HorizontalOptions="FillAndExpand" IsEnabled="False"></Entry>
         <Entry Placeholder="Response" IsEnabled="False"></Entry>
-        <Button x:Name="listenButton" Text="Listen" HorizontalOptions="Start" BorderRadius="140"></Button>
+        <Button x:Name="listenButton" Text="Listen" Clicked="listenButtonClicked" HorizontalOptions="Start" BorderRadius="140"></Button>
         <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
             <Button x:Name="backButton" Text="Back" HorizontalOptions="FillAndExpand" ></Button>
             <Button x:Name="nextButton" Text="Next" Clicked="nextButtonClicked" HorizontalOptions="FillAndExpand"></Button>
