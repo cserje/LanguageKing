@@ -70,5 +70,5 @@ C:\Users\Cserje\documents\visual studio 2017\Projects\LanguageKing\LanguageKing\
 C:\Users\Cserje\documents\visual studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\Cserje\documents\visual studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Cserje\documents\visual studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\Cserje\documents\visual studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing.Android\obj\Debug\LanguageKing.Android.dll.mdb
-C:\Users\Cserje\documents\visual studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing.Android\bin\Debug\LanguageKing.Android.dll.mdb
+C:\Users\Cserje\Documents\Visual Studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing.Android\obj\Debug\LanguageKing.Android.dll.mdb
+C:\Users\Cserje\Documents\Visual Studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing.Android\bin\Debug\LanguageKing.Android.dll.mdb

@@ -33,7 +33,7 @@
               
                
                         <Picker x:Name="secondLanguagePicker"
-                            Title="Second language" 
+                            Title="{Binding SecondLanguagePlaceHolder}" 
                             SelectedIndexChanged="OnSecondLanguageChanged"
                             HorizontalOptions="Center">
                     <Picker.Items>

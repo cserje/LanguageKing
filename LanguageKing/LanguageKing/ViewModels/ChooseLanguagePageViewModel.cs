@@ -12,8 +12,9 @@ namespace LanguageKing.ViewModels
     { 
         private string[] titles= {"Select your language!", "Choisissez votre langue!",  "Wählen Sie Ihre Sprache!", "Válassza ki a nyelveket!", "Seleziona la tua lingua!"};
         private string[] nextButtonText= {"Next", "Plus", "Weiter", "Tovább", "Ulteriormente" };
+        private string[] secondLanguagePlaceHolder = { "Second language", "Deuxième langue", "Zweite Sprache","Második nyelv", "Seconda lingua" };
         private int firstLanguageSelectedIndex=0;
-        string title;
+       
         public int FirstLanguageSelectedIndex
         {
             get { return firstLanguageSelectedIndex; }
@@ -21,6 +22,7 @@ namespace LanguageKing.ViewModels
                 OnPropertyChanged();
                 OnPropertyChanged(nameof(Title));
                 OnPropertyChanged(nameof(NextText));
+                OnPropertyChanged(nameof(SecondLanguagePlaceHolder));
             }
         }
 
@@ -37,6 +39,10 @@ namespace LanguageKing.ViewModels
         {
             get { return nextButtonText[firstLanguageSelectedIndex]; }
             
+        }
+        public string SecondLanguagePlaceHolder
+        {
+            get { return secondLanguagePlaceHolder[firstLanguageSelectedIndex]; }
         }
        
 
