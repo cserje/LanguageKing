@@ -15,7 +15,7 @@ namespace LanguageKing
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LearnWords : ContentPage
     {
-       private int count=0;
+        private int count=0;
         private List<Word> words=new List<Word>();
        
         public LearnWords()
@@ -48,8 +48,9 @@ namespace LanguageKing
 
         public void listenButtonClicked(object sender, EventArgs e)
         {
-            
-            CrossTextToSpeech.Current.Speak("Orbán Viktor Magyarország királya");
+
+            DependencyService.Get<ITextToSpeech>().Speak("Orbán Viktor Magyarország királya");
+            //CrossTextToSpeech.Current.Speak("Orbán Viktor Magyarország királya");
         }
 
         private void InitWords()
