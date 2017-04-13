@@ -18,6 +18,14 @@ namespace DependencyServiceSample.Droid
 
         public void Speak(string text)
         {
+            try
+            {
+                speaker.SetLanguage(Locale.French);
+            }
+            catch (Exception e)
+            {
+                
+            }
             var ctx = Forms.Context; // useful for many Android SDK features
             toSpeak = text;
             if (speaker == null)

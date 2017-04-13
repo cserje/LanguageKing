@@ -49,7 +49,7 @@ namespace LanguageKing
         public void listenButtonClicked(object sender, EventArgs e)
         {
 
-            DependencyService.Get<ITextToSpeech>().Speak("Orbán Viktor Magyarország királya");
+            DependencyService.Get<ITextToSpeech>().Speak("Au revoir");
             //CrossTextToSpeech.Current.Speak("Orbán Viktor Magyarország királya");
         }
 

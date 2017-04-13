@@ -78,5 +78,3 @@ C:\Users\Mozsi\Source\Repos\LanguageKing\LanguageKing\LanguageKing\obj\Debug\Lan
 C:\Users\Mozsi\Source\Repos\LanguageKing\LanguageKing\LanguageKing\bin\Debug\LanguageKing.dll.mdb
 C:\Users\Mozsi\Source\Repos\LanguageKing\LanguageKing\LanguageKing\obj\Debug\LanguageKing.dll.mdb
 C:\Users\Mozsi\Source\Repos\LanguageKing\LanguageKing\LanguageKing\bin\Debug\LanguageKing.dll.mdb
-C:\Users\Mozsi\Source\Repos\LanguageKing\LanguageKing\LanguageKing\obj\Debug\LanguageKing.dll.mdb
-C:\Users\Mozsi\Source\Repos\LanguageKing\LanguageKing\LanguageKing\bin\Debug\LanguageKing.dll.mdb
