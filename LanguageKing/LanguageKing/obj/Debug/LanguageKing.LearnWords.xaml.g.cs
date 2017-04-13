@@ -17,6 +17,12 @@ namespace LanguageKing {
     public partial class LearnWords : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label questionLabel;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label answerLabel;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Button listenButton;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -28,6 +34,8 @@ namespace LanguageKing {
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(LearnWords));
+            questionLabel = this.FindByName<global::Xamarin.Forms.Label>("questionLabel");
+            answerLabel = this.FindByName<global::Xamarin.Forms.Label>("answerLabel");
             listenButton = this.FindByName<global::Xamarin.Forms.Button>("listenButton");
             backButton = this.FindByName<global::Xamarin.Forms.Button>("backButton");
             nextButton = this.FindByName<global::Xamarin.Forms.Button>("nextButton");

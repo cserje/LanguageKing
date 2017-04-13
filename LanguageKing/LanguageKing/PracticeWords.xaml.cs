@@ -12,11 +12,10 @@ namespace LanguageKing
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PracticeWords : ContentPage
     {
-        int firstLanguage, secondLanguage;
-        public PracticeWords(int first, int second)
+       
+        public PracticeWords()
         {
-            firstLanguage = first;
-            secondLanguage = second;
+           
             InitializeComponent();
         }
     }

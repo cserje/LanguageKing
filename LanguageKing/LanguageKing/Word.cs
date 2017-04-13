@@ -9,7 +9,7 @@ namespace LanguageKing
     class Word
     {
         //E, F, G, H, I
-        private List<string> element = new List<string>();
+        public List<string> element = new List<string>();
 
 
 

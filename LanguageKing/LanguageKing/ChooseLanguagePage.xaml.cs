@@ -15,9 +15,8 @@ namespace LanguageKing
     {
         enum languages{english=0,french=1,german=2,hungarian=3,italian=4}
         
-        private int selectedFirst=-1;
-        private int selectedSecond=-1;
         public static int FirstLanguage=0;
+        public static int SecondLanguage=-1;
         
         public ChooseLanguagePage(String s)
         {
@@ -31,22 +30,21 @@ namespace LanguageKing
         void OnFirstLanguageChanged(object sender, EventArgs e)
         {
           
-            selectedFirst = firstLanguagePicker.SelectedIndex;
-            FirstLanguage = selectedFirst;
+            FirstLanguage = firstLanguagePicker.SelectedIndex;
             
             
         }
         void OnSecondLanguageChanged(object sender, EventArgs e)
         {
            
-            selectedSecond = secondLanguagePicker.SelectedIndex;
+            SecondLanguage = secondLanguagePicker.SelectedIndex;
         }
 
         async void OnSelectLanguagesAsync(object sender, EventArgs e)
         {
-            if ((selectedFirst == -1 || selectedSecond == -1) || selectedFirst == selectedSecond)
+            if ((SecondLanguage == -1) || FirstLanguage == SecondLanguage)
             {
-                switch(selectedFirst)
+                switch(FirstLanguage)
                 {
                     case (int) languages.english:
                         await DisplayAlert("Warning", "Choose two different languages!", "Cancel");
@@ -68,7 +66,7 @@ namespace LanguageKing
             else
             {
            
-                await Navigation.PushAsync(new MainMenuPage(selectedFirst,selectedSecond));
+                await Navigation.PushAsync(new MainMenuPage());
 
             }
         }

@@ -16,8 +16,6 @@ c:\users\cserje\documents\visual studio 2017\Projects\LanguageKing\LanguageKing\
 C:\Users\Cserje\Documents\Visual Studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\obj\Debug\LanguageKing.LearnWords.xaml.g.cs
 C:\Users\Cserje\Documents\Visual Studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\obj\Debug\LanguageKing.PracticeWords.xaml.g.cs
 C:\Users\Cserje\Documents\Visual Studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\obj\Debug\LanguageKing.csprojResolveAssemblyReference.cache
-C:\Users\Cserje\Documents\Visual Studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\obj\Debug\LanguageKing.dll.mdb
-C:\Users\Cserje\Documents\Visual Studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\bin\Debug\LanguageKing.dll.mdb
 E:\Users\Mozsi\Source\Repos\Lang\LanguageKing\LanguageKing\bin\Debug\LanguageKing.dll
 E:\Users\Mozsi\Source\Repos\Lang\LanguageKing\LanguageKing\bin\Debug\LanguageKing.pdb
 E:\Users\Mozsi\Source\Repos\Lang\LanguageKing\LanguageKing\bin\Debug\Xamarin.Forms.Core.dll
@@ -44,3 +42,11 @@ E:\Users\Mozsi\Source\Repos\Lang\LanguageKing\LanguageKing\bin\Debug\Plugin.Text
 E:\Users\Mozsi\Source\Repos\Lang\LanguageKing\LanguageKing\bin\Debug\Plugin.TextToSpeech.Abstractions.xml
 E:\Users\Mozsi\Source\Repos\Lang\LanguageKing\LanguageKing\obj\Debug\LanguageKing.dll.mdb
 E:\Users\Mozsi\Source\Repos\Lang\LanguageKing\LanguageKing\bin\Debug\LanguageKing.dll.mdb
+C:\Users\Cserje\Documents\Visual Studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\bin\Debug\Plugin.TextToSpeech.Abstractions.dll
+C:\Users\Cserje\Documents\Visual Studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\bin\Debug\Plugin.TextToSpeech.dll
+C:\Users\Cserje\Documents\Visual Studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\bin\Debug\Plugin.TextToSpeech.pdb
+C:\Users\Cserje\Documents\Visual Studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\bin\Debug\Plugin.TextToSpeech.xml
+C:\Users\Cserje\Documents\Visual Studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\bin\Debug\Plugin.TextToSpeech.Abstractions.pdb
+C:\Users\Cserje\Documents\Visual Studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\bin\Debug\Plugin.TextToSpeech.Abstractions.xml
+C:\Users\Cserje\documents\visual studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\obj\Debug\LanguageKing.dll.mdb
+C:\Users\Cserje\documents\visual studio 2017\Projects\LanguageKing\LanguageKing\LanguageKing\bin\Debug\LanguageKing.dll.mdb

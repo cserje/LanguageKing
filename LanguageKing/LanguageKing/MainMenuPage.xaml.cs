@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LanguageKing.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,24 +13,22 @@ namespace LanguageKing
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainMenuPage : ContentPage
     {
-        private int firstLanguage;
-        private int secondLanguage;
 
-        public MainMenuPage(int first, int second)
+
+        public MainMenuPage()
         {
-           firstLanguage = first;
-            this.secondLanguage = second;
             InitializeComponent();
+            BindingContext = new MainMenuPageViewModel();
         }
 
         private async Task learnButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new LearnWords(firstLanguage,secondLanguage));
+            await Navigation.PushAsync(new LearnWords());
         }
         
              private async Task practiceButton_clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new PracticeWords(firstLanguage, secondLanguage));
+            await Navigation.PushAsync(new PracticeWords());
         }
 
         private void CloseApplication(object sender, EventArgs e)
