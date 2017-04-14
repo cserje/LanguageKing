@@ -2,10 +2,6 @@ LanguageKing.Droid.MainActivity, LanguageKing.Android;md54ab1008f7935bb04e064f6a
 LanguageKing.Droid.MainActivity, LanguageKing.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54ab1008f7935bb04e064f6abca8165c3.MainActivity
 LanguageKing.Droid.MainActivity;md54ab1008f7935bb04e064f6abca8165c3.MainActivity
 languageking.droid.MainActivity;md54ab1008f7935bb04e064f6abca8165c3.MainActivity
-DependencyServiceSample.Droid.TextToSpeechAndroid, LanguageKing.Android;md50361d53309d12b19037de7ad154be3aa.TextToSpeechAndroid
-DependencyServiceSample.Droid.TextToSpeechAndroid, LanguageKing.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50361d53309d12b19037de7ad154be3aa.TextToSpeechAndroid
-DependencyServiceSample.Droid.TextToSpeechAndroid;md50361d53309d12b19037de7ad154be3aa.TextToSpeechAndroid
-dependencyservicesample.droid.TextToSpeechAndroid;md50361d53309d12b19037de7ad154be3aa.TextToSpeechAndroid
 Plugin.TextToSpeech.TextToSpeech, Plugin.TextToSpeech;md54e563667b320e8477294d1af4ca5a8db.TextToSpeech
 Plugin.TextToSpeech.TextToSpeech, Plugin.TextToSpeech, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null;md54e563667b320e8477294d1af4ca5a8db.TextToSpeech
 Plugin.TextToSpeech.TextToSpeech;md54e563667b320e8477294d1af4ca5a8db.TextToSpeech

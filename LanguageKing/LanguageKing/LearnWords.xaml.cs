@@ -3,7 +3,6 @@ using LanguageKing.ViewModels;
 using Plugin.TextToSpeech;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,51 +15,41 @@ namespace LanguageKing
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LearnWords : ContentPage
     {
-        private int count=0;
+       private int count=0;
         private List<Word> words=new List<Word>();
        
         public LearnWords()
         {
-            InitWords();
             InitializeComponent();
             BindingContext = new LearnWordsViewModel();
-            questionLabel.SetBinding(Label.TextProperty, "Text");
-            answerLabel.SetBinding(Label.TextProperty, "Text");
-            GetWord();
+           
         }
 
         private void Learn()
-        {            
-            InitWords();            
+        {
+            
+            InitWords();
+            
+            //questionEntry.BindingContext = words[0].element[ChooseLanguagePage.FirstLanguage];
+            //answerEntry.BindingContext = words[0].element[ChooseLanguagePage.SecondLanguage];
+            //while (count<words.Count)
+            //{
+                
+            //}
+            
         }
 
         public void nextButtonClicked(object sender, EventArgs e)
         {
-            if (count < words.Count - 1)
-            {
-                count++;
-            }
-            else
-            {
-                DisplayAlert("No more words!", "Check back later to learn more!", "Back");
-            }
-            GetWord();
-        }
-
-        public void backButtonClicked(object sender, EventArgs e)
-        {
-            if (count > 0)
-            {
-                count--;
-            }
-            GetWord();
+            
+            count++;
+            
         }
 
         public void listenButtonClicked(object sender, EventArgs e)
         {
-            String text = questionLabel.Text;
-            DependencyService.Get<ITextToSpeech>().Speak(text, ChooseLanguagePage.SecondLanguage);
-            //CrossTextToSpeech.Current.Speak("Orbán Viktor Magyarország királya");
+            
+            CrossTextToSpeech.Current.Speak("Orbán Viktor Magyarország királya");
         }
 
         private void InitWords()
@@ -74,15 +63,6 @@ namespace LanguageKing
             words.Add(new Word("five", "h cinq", "fünf", "öt", "cinque"));
             
         }
-
-        private void GetWord()
-        {
-            //Debug.WriteLine(words[count].getWord(ChooseLanguagePage.SecondLanguage));
-            //Debug.WriteLine(words[count].getWord(ChooseLanguagePage.FirstLanguage));
-            questionLabel.BindingContext = new { Text = words[count].getWord(ChooseLanguagePage.SecondLanguage) };
-            answerLabel.BindingContext = new { Text = words[count].getWord(ChooseLanguagePage.FirstLanguage) };
-        }
-
     }
 
     
