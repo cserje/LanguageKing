@@ -26,9 +26,9 @@ namespace LanguageKing
 
         //Visszaadja a szót az összes nyelven
         //TODO: a hívó függvény választja majd ki a main/secondLanguage alapján a megfelelő nyelvet
-        public List<String> getWord()
+        public String getWord(int lang)
         {
-            return element;
+            return element[lang];
         }
         public void setWord(int i, string s)
         {

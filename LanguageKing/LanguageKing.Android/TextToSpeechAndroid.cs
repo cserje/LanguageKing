@@ -16,11 +16,32 @@ namespace DependencyServiceSample.Droid
 
         public TextToSpeechAndroid() { }
 
-        public void Speak(string text)
+        public void Speak(string text, int lang)
         {
             try
             {
-                speaker.SetLanguage(Locale.French);
+                //sorrend: angol, francia, német, magyar, olasz
+                switch (lang)
+                {
+                    case 1:
+                        speaker.SetLanguage(Locale.English);
+                        break;
+                    case 2:
+                        speaker.SetLanguage(Locale.French);
+                        break;
+                    case 3:
+                        speaker.SetLanguage(Locale.German);
+                        break;
+                    case 4:
+                        speaker.SetLanguage(Locale.English);
+                        break;
+                    case 5:
+                        speaker.SetLanguage(Locale.Italian);
+                        break;
+                    default:
+                        speaker.SetLanguage(Locale.English);
+                        break;
+                }
             }
             catch (Exception e)
             {

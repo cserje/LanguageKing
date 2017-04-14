@@ -20,9 +20,9 @@ namespace LanguageKing
        
         public LearnWords()
         {
+            InitWords();
             InitializeComponent();
             BindingContext = new LearnWordsViewModel();
-           
         }
 
         private void Learn()
@@ -40,16 +40,27 @@ namespace LanguageKing
         }
 
         public void nextButtonClicked(object sender, EventArgs e)
+        {            
+            if (count < words.Count - 1)
+            {
+                count++;
+            }
+            GetWord();
+        }
+
+        public void backButtonClicked(object sender, EventArgs e)
         {
-            
-            count++;
-            
+            if (count > 0)
+            {
+                count--;
+            }
+            GetWord();
         }
 
         public void listenButtonClicked(object sender, EventArgs e)
         {
-
-            DependencyService.Get<ITextToSpeech>().Speak("Au revoir");
+            String text = questionLabel.Text;
+            DependencyService.Get<ITextToSpeech>().Speak(text, ChooseLanguagePage.SecondLanguage);
             //CrossTextToSpeech.Current.Speak("Orbán Viktor Magyarország királya");
         }
 
@@ -64,6 +75,13 @@ namespace LanguageKing
             words.Add(new Word("five", "h cinq", "fünf", "öt", "cinque"));
             
         }
+
+        private void GetWord()
+        {
+                questionLabel.BindingContext = new { Text = words[count].getWord(ChooseLanguagePage.SecondLanguage) };
+                answerLabel.BindingContext = new { Text = words[count].getWord(ChooseLanguagePage.FirstLanguage) };
+        }
+
     }
 
     

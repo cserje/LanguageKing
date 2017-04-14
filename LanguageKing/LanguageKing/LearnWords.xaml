@@ -15,7 +15,7 @@
         <!--<Entry x:Name="answerEntry" Text="{Binding AnswerText}" HorizontalOptions="FillAndExpand" IsEnabled="False"></Entry>-->
         <Button x:Name="listenButton" Text="Listen" Clicked="listenButtonClicked" HorizontalOptions="Start" BorderRadius="140"></Button>
         <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-            <Button x:Name="backButton" Text="{Binding BackButtonText}" HorizontalOptions="FillAndExpand" ></Button>
+            <Button x:Name="backButton" Text="{Binding BackButtonText}" Clicked="backButtonClicked" HorizontalOptions="FillAndExpand" ></Button>
             <Button x:Name="nextButton" Text="{Binding NextButtonText}" Clicked="nextButtonClicked" HorizontalOptions="FillAndExpand"></Button>
         </StackLayout>
     </StackLayout>
