@@ -19,12 +19,11 @@
         <Button Text="Fourth answer"></Button>-->
 
     <StackLayout Orientation="Vertical" Spacing="20">
-        <Entry Placeholder="Question" HorizontalOptions="FillAndExpand" IsEnabled="False"></Entry>
-       
-        <Button Text="First answer" HorizontalOptions="Fill"></Button>
-        <Button Text="Second answer"  ></Button>
+        <Label x:Name="questionLabel" Text="{Binding questionLabelText}" HorizontalOptions="Center" FontSize="Medium" />
 
-        <Button Text="Third answer"></Button>
-        <Button Text="Fourth answer"></Button>
+        <Button x:Name="button1" Text="{Binding firstButtonText}" HorizontalOptions="Fill"/>
+        <Button x:Name="button2" Text="{Binding secondButtonText}" HorizontalOptions="Fill"/>
+        <Button x:Name="button3" Text="{Binding thirdButtonText}" HorizontalOptions="Fill"/>
+        <Button x:Name="button4" Text="{Binding fourthButtonText}" HorizontalOptions="Fill"/>
     </StackLayout>
 </ContentPage>

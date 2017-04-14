@@ -55,6 +55,7 @@
     <Compile Include="ViewModels\ChooseLanguagePageViewModel.cs" />
     <Compile Include="ViewModels\LearnWordsViewModel.cs" />
     <Compile Include="ViewModels\MainMenuPageViewModel.cs" />
+    <Compile Include="ViewModels\PracticeWordsViewModel.cs" />
     <Compile Include="Word.cs" />
   </ItemGroup>
   <ItemGroup>
