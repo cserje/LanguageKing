@@ -3,6 +3,7 @@ using LanguageKing.ViewModels;
 using Plugin.TextToSpeech;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,27 +24,25 @@ namespace LanguageKing
             InitWords();
             InitializeComponent();
             BindingContext = new LearnWordsViewModel();
+            questionLabel.SetBinding(Label.TextProperty, "Text");
+            answerLabel.SetBinding(Label.TextProperty, "Text");
+            GetWord();
         }
 
         private void Learn()
-        {
-            
-            InitWords();
-            
-            //questionEntry.BindingContext = words[0].element[ChooseLanguagePage.FirstLanguage];
-            //answerEntry.BindingContext = words[0].element[ChooseLanguagePage.SecondLanguage];
-            //while (count<words.Count)
-            //{
-                
-            //}
-            
+        {            
+            InitWords();            
         }
 
         public void nextButtonClicked(object sender, EventArgs e)
-        {            
+        {
             if (count < words.Count - 1)
             {
                 count++;
+            }
+            else
+            {
+                DisplayAlert("No more words!", "Check back later to learn more!", "Back");
             }
             GetWord();
         }
@@ -78,8 +77,10 @@ namespace LanguageKing
 
         private void GetWord()
         {
-                questionLabel.BindingContext = new { Text = words[count].getWord(ChooseLanguagePage.SecondLanguage) };
-                answerLabel.BindingContext = new { Text = words[count].getWord(ChooseLanguagePage.FirstLanguage) };
+            //Debug.WriteLine(words[count].getWord(ChooseLanguagePage.SecondLanguage));
+            //Debug.WriteLine(words[count].getWord(ChooseLanguagePage.FirstLanguage));
+            questionLabel.BindingContext = new { Text = words[count].getWord(ChooseLanguagePage.SecondLanguage) };
+            answerLabel.BindingContext = new { Text = words[count].getWord(ChooseLanguagePage.FirstLanguage) };
         }
 
     }

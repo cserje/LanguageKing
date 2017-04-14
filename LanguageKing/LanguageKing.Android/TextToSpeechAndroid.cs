@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using DependencyServiceSample.Droid;
 using Java.Util;
 using System;
+using System.Diagnostics;
 
 [assembly: Xamarin.Forms.Dependency(typeof(TextToSpeechAndroid))]
 namespace DependencyServiceSample.Droid
@@ -23,19 +24,19 @@ namespace DependencyServiceSample.Droid
                 //sorrend: angol, francia, német, magyar, olasz
                 switch (lang)
                 {
-                    case 1:
+                    case 0:
                         speaker.SetLanguage(Locale.English);
                         break;
-                    case 2:
+                    case 1:
                         speaker.SetLanguage(Locale.French);
                         break;
-                    case 3:
+                    case 2:
                         speaker.SetLanguage(Locale.German);
                         break;
-                    case 4:
+                    case 3:
                         speaker.SetLanguage(Locale.English);
                         break;
-                    case 5:
+                    case 4:
                         speaker.SetLanguage(Locale.Italian);
                         break;
                     default:
